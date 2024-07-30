@@ -1,0 +1,20 @@
+// C++ code
+//
+int counter;
+
+void setup()
+{
+  pinMode(13, OUTPUT);
+
+  for (counter = 0; counter < 1000000; ++counter) {
+    digitalWrite(13, HIGH);
+    delay(1000); // Wait for 1000 millisecond(s)
+    digitalWrite(13, LOW);
+    delay(1000); // Wait for 1000 millisecond(s)
+  }
+}
+
+void loop()
+{
+  delay(10); // Delay a little bit to improve simulation performance
+}
